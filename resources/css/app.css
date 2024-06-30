@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+table {
+    @apply w-full;
+}
+
+thead tr {
+    @apply bg-primary text-secondary;
+}
+
+th {
+    @apply px-4 py-1;
+}
+
+tbody tr {
+    @apply odd:bg-secondary even:bg-secondary-hover;
+}
+
+td {
+    @apply px-4 py-1;
+}
+
+.input {
+    @apply w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
